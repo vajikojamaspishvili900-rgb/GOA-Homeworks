@@ -173,6 +173,6 @@ right(90)
 forward(60)
 end_fill()
 hideturtle()
-
+bgcolor('skyblue')
 
 exitonclick()

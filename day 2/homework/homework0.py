@@ -20,3 +20,8 @@ name = input("Enter your name: ") #Input ფუნქციის დახმ�
 age = input("Enter your age: ")
 
 print("Hello",name,", you are", int(age), "years old!") #ცვლადების გამოყენება
+
+
+
+
+
