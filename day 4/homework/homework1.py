@@ -21,7 +21,7 @@ print(type(int(age)))
 print(int(age))
 
 
-print(int(10) == 10) #4
+print(int("10") == 10) #4
 
 
 print(int("5") > 3) #5
