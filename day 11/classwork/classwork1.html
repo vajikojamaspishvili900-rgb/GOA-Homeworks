@@ -1,0 +1,33 @@
+<!--
+0) ახსენით რას შვება Radio Checkbox და Color
+1) გააკეთეთ ესეთი ფორმა მაგრამ დაუმატეთ Color და Submit
+-->
+
+<!--
+0) Radio - ერთ-ერთი input ფორმაა, და მრგვალი არჩევის ღილაკია, ანუ მომხმარებელს შეუძლია რაღაც აირჩიოს.
+Checkbox - ოთხკუთხედი მონიშვნის ღილაკია.
+Color - ფერის არჩევა შეგვიძლია.
+-->
+
+<form>
+    <label for="firstname">First Name: </label>
+    <input type="text" id="firstname" name="firstname" placeholder="Enter First Name"><br>
+    <label for="lastname">Last Name: </label>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter Last name"><br>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" placeholder="Enter Email Adress"><br>
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password" ><br>
+    <label>Gender:</label><br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" ><br>
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender"><br>
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" ><br>
+    <label for="age">Age: </label>
+    <input type="number" id="age" name="age"><br>
+    <label for="color">Color: </label>
+    <input type="color" id="color" required name="color"><br>
+    <input type="submit">
+</form>
