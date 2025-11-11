@@ -1,0 +1,42 @@
+<!--
+0)კომენტარების საშვალებით ჩამოწერეთ და ახსენით ყველა დღეს ნასწავლი ატრიბუტი
+1)გააკეთეთ drop-down menu მანქანებზე, რომელსაც ექნება 5 არჩევანი. ასევე გამოიყენეთ ყველა ნასწავლი ატრიბუტი
+2)შექმენით საიტი და დაამატეთ მასზე ვიდეო, გამოიყენეთ ატრიბუტები
+3)შექმენით საიტი სადაც იქნება Drop-down menu და video
+-->
+
+
+
+<!--
+0) video თეგის ატრიბუტები:
+controls - ვიდეოს კონტროლების ჩვენება (play, pause, volume-ის შეცვლა და ა.შ.).
+autoplay - ვიდეო ავტომატურად ჩაირთვება გვერდის ჩატვირთვისას.
+loop - ვიდეო ხელახლა ჩაირთვება დასრულების შემდეგ.
+muted - ვიდეოს ჩუმ რეჟიმში ჩართვა მოხდება.
+
+source თეგის ატრიბუტები:
+type - მასში უნდა ჩავწეროთ ვიდეოს ტიპი, მაგ: type="video/mp4"
+src - აქ კი უნდა ჩავწეროთ ფაილის სახელი მაგ: src="video.mp4"
+-->
+
+
+
+<!--3)-->
+
+<!--1)-->
+<h1>CARS</h1>
+<form>
+    <label for="colors">Choose your favorite Car: </label>
+    <br>
+    <select id="colors" name="colors">
+        <option selected>Mercedes</option>
+        <option>BMW</option>
+        <option>Toyota</option>
+        <option disabled>Honda</option>
+        <option hidden>Ford</option>
+    </select>
+</form>
+<!--2-->
+<video controls loop width="300">
+    <source src="cars.mp4" type="video/mp4">
+</video>
