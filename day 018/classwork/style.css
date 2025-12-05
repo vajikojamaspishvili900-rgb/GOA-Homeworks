@@ -1,0 +1,10 @@
+body{
+    background-color: lightgreen;
+}
+
+p{
+    color: brown;
+    background-color: skyblue;
+    font-size: 20px;
+    text-align: center;
+}
