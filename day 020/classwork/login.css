@@ -1,0 +1,16 @@
+nav{
+    text-align: center;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    font-size: 30px;
+}
+
+form{
+    text-align: center;
+    background-color: aquamarine;
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(190, 190, 190);
+}
