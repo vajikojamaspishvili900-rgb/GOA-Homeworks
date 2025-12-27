@@ -1,0 +1,20 @@
+/* 0) შექმენით საიტი, სადაც გექნებათ h1 თეგი და p თეგი, h1 თეგი გადაიტანეთ შუაში, ხოლო p თეგი მარცხნივ
+1) პირველ დავალებაში შექმნით h1 თეგს, გადაუსვით წითელი ხაზი, ხოლო p თეგს ქვემოდან და ზემოთ გაუსვით მწვანე ხაზი */
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+#header{
+    text-decoration: dashed line-through red;
+    text-align: center;
+}
+
+
+#par{
+    text-decoration: wavy underline overline green;
+    text-align: left;
+}

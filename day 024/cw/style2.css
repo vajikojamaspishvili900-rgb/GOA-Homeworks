@@ -1,0 +1,17 @@
+/* 2) შექმენით ტექსტი, რომელსაც ექნება ჩრდილი, ეს ჩდრილი უნდა იყოს მარჯვნივ გაწერული 7px, ქვემოთ ჩამოწეული 2px, და blur უნდა ჰქონდეს 20px, ფერი თქვენ შეარჩიეთ
+3) google fontიდან წამოიღეთ თქვენს მიერ სასურველი ფონტი და ჩასვით თქვენს საიტზე */
+
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap');
+
+body{
+    color: white;
+    background-color: black;
+}
+
+.hello{
+    text-shadow: 7px 2px 20px rgb(255, 255, 255);
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
