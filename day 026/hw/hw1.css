@@ -1,0 +1,31 @@
+/*
+
+1) შექმენი ცხრილი (<table>) და CSS-ით მიანიჭე მას border, რომ ყველა უჯრა გამოჩნდეს ხაზებით
+
+2) გააფორმე ცხრილის სათაურები (<th>) ისე, რომ ჰქონდეს განსხვავებული background-color ვიდრე ჩვეულებრივ უჯრებს (<td>)
+
+3) გამოიყენე pseudo selector :hover ცხრილის რიგებზე (<tr>), რომ მაუსის მიტანისას შეიცვალოს ფონი
+
+4) გამოიყენე pseudo selector :nth-child(even), რომ ცხრილში ყოველ მეორე რიგს ჰქონდეს განსხვავებული ფერი
+
+*/
+
+
+table,th,td,tr{
+    border: 2px solid rgb(100, 0, 0);
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+
+th{
+    background-color: rgb(150, 150, 150);
+}
+
+tr:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+td:nth-child(even){
+    background-color: pink;
+}
