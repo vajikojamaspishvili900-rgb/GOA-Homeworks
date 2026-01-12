@@ -1,0 +1,38 @@
+
+/* cw1 */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.orderli{
+    list-style-image: url('https://blob.sololearn.com/courses/logo.png');
+    list-style-position: inside;
+}
+
+
+/* list-style-type-ები: */
+
+/* 
+    none - არანაირი სიმბოლო არ გვექნება
+    square - კვადრატი
+    circle - წრეწირი
+    disc - შავი წრე
+    decimal - რიცხვები 1,2,3...
+    decimal-leading-zero - რიცხვები უბრალოდ წინ ექნება ნული, ასე 01,02,03...
+    upper/lower-roman - რომაული რიცხვები I,II,III.../i,ii,iii...
+    upper/lower-alpha - ინგლისური ალფაბეტი A,B,C.../a,b,c...
+*/
+
+
+
+/* cw2 */
+
+input[type = "password"]{
+    color: black;
+}
+
+input[type = "text"]{
+    color: yellow;
+}
