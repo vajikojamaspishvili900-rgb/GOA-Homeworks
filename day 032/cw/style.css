@@ -1,0 +1,36 @@
+/* <!-- Level 32
+1) შექმენით საიტი ნებიმიერ თემაზე გამოიყენეთ box model ი და რასაც გამოიყენებთ ყველაფერი ახსენით რას შვება --> */
+
+.container {
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: rgb(175, 255, 255);
+}
+button{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 121, 121);
+    border: none;
+}
+button:hover{
+    background-color: rgb(239, 164, 164);
+    cursor: pointer;
+}
+input{
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+body{
+    background-color: rgb(225, 225, 225);
+}
+h1{
+    margin: 35px;
+}
