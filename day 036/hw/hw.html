@@ -1,0 +1,44 @@
+<!-- 1) შექმენი <div>, რომელსაც ექნება position: relative და ოდნავ გადაადგილდება top ან left-ის გამოყენებით
+
+2) შექმენი შიდა <div>, რომელსაც ექნება position: absolute და განთავსდება მშობელი ელემენტის შიგნით
+
+3) შექმენი ელემენტი position: fixed-ით, რომელიც ეკრანზე ერთ ადგილზე დარჩება სკროლის დროს
+
+4) შექმენი ორი ელემენტი flex container-ში და გამოიყენე order, რომ მათი თანმიმდევრობა შეცვალო
+
+5) შექმენი სამი ელემენტი flex container-ში და ერთ-ერთს მიანიჭე order: -1, რომ პირველ ადგილზე გადავიდეს -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1) -->
+    <div id="div1">
+        <!-- 2) -->
+        <div id="div2"></div>
+    </div>
+
+    <!-- 3) -->
+    <div id="div3"></div>
+    <div id="test"></div>
+
+    <!-- 4) -->
+    <div id="container1">
+        <div id="div4">1</div>
+        <div id="div5">2</div>
+    </div>
+
+    <!-- 5) -->
+    <div id="container2">
+        <div id="div6">1</div>
+        <div id="div7">2</div>
+        <div id="div8">3</div>
+    </div>
+</body>
+</html>

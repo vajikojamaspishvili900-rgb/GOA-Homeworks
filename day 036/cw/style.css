@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+#but{
+    position: fixed;
+    top: 0;
+    right: 0;
+}

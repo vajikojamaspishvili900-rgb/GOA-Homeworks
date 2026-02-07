@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(108, 27, 27);
+}
+
+
+/* 1) */
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    left: 50px;
+    margin-bottom: 50px;
+    top: 50px;
+}
+
+/* 2) */
+#div2{
+    height: 50%;
+    width: 50%;
+    background-color: bisque;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+/* 3) */
+#div3{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    position: fixed;
+    left: 400px;
+}
+#test{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1167px;
+    width: 100px;
+}
+
+/* 4) */
+#container1{
+    background-color: bisque;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#div4{
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+}
+#div5{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+}
+
+
+/* 5) */
+#container2{
+    background-color: rgba(255, 255, 255, 0.377);
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#div6{
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 0;
+}
+#div7{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 0;
+}
+#div8{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+}
