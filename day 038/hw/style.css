@@ -1,0 +1,35 @@
+/*
+
+3) შექმენით საიტი, სადაც გექნებათ 9 ელემენტი, შემდეგ gridის გამოყენებით შექმენით 3x2 განლაგება, სადაც ყველა ელემენტი იქნება იგივე ზომა
+
+4) შექმენით საიტი, სადაც იქნება 16 ელემენტი, შემდეგ gridის გამოყენებით შექმენით 4x4 განლაგება, სადაც ყველა ელემენტი იქნება იგივე ზომა
+
+*/
+
+
+
+
+/* 3) */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.box{
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+}
+
+
+/* 4) */
+.container2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.box2{
+    background-color: lightcoral;
+    height: 100px;
+    width: 80%;
+}

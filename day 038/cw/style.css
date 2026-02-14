@@ -1,0 +1,25 @@
+/* cw1 */
+
+/* 0) */
+.bigdiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.box{
+    height: 50px;
+    background-color: aqua;
+}
+
+/* 1) */
+.bigdiv2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.box2{
+    height: 50px;
+    background-color: aqua;
+}
+
+
