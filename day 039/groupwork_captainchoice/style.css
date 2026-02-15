@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 100;
+  margin: 70px;
+}
+
+
+.h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: 900;
+    font-size: 50px;
+    width: 400px
+}
+
+.p1{
+    color: hsl(303, 10%, 53%);
+    width: 450px;
+}
+
+.text_container{
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars_text{
+    color: hsl(300, 43%, 22%);
+    font-weight: 800;
+}
+
+
+
+.stars_div1,
+.stars_div2,
+.stars_div3 {
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-flow: row wrap;
+}
+
+.stars_imgs{
+    display: flex;
+    gap: 10px;
+}
+.stars{
+    width: 15px;
+    height: 15px;
+}
+
+.allstars_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+.whole_top_part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    flex-flow: row wrap;
+}
+
+
+
+
+
+.whole_comment1{
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+}
+.whole_comment2{
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 20px;
+}
+.whole_comment3{
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0px;
+}
+
+.com_name{
+    color: hsl(300, 24%, 96%);
+    font-weight: bold;
+    padding-bottom: -100px;
+    margin-bottom: 5px
+}
+
+.verify_text{
+    color: hsl(333, 80%, 67%);
+    margin-top: 0;
+}
+
+
+.comments{
+    color:hsl(0, 0%, 100%);
+}
+
+.people{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+
+.whole_below_part{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+
+.attribution{
+    margin-top: 500px;
+}
+
+
+.com_smalltext_div{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments_smalldiv{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
