@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+button{
+    transition: transform 10s ease-in, background-color 5s ease-in;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(2);
+}

@@ -1,0 +1,45 @@
+<!-- 0) ჩამოწერეთ ყველა background-imageის წესი, რომელიც ვისწავლეთ(background-image, background-size და ასე შემდეგ)
+1) შექმენით საიტი სადაც background-image, გამოიყენეთ მასზე background-size: cover ან contain მისი ზომის მიხედვით, 
+ასევე კომენტარებით ასხსენით რა არის განსხვავება coverს და containს შორის -->
+
+<!--
+
+0)
+
+background-image: url("example.jpg");   --- გამოიყენება ელემენტის ფონზე გამოსახულების დასაყენებლად.
+
+0 / 1)
+background-size: cover / contain;   --- cover - ამ დროს ფოტო სრულად ფარავს ელემენტს,
+მაგრამ შეიძლება მისი ნაწილი არ ეტეოდეს ელემენტში, ხოლო
+contain - ის შემთხვევაში სურათი სრულად ეტევა ელემენტში
+
+background-repeat: no-repeat / repeat-x / repeat-y / repeat;   --- no-repeat - სურათი არ მეორდება, 
+repeat-x - სურათი მეორდება ჰორიზონტალურად(y ღერძზე), repeat-y - სურათი მეორდება ვერტიკალურად(x ღერძზე),
+repeat - სურათი მეორდება ყველა მიმართულებით
+
+background-position: center / top / bottom / left / right;  --- center - სურათი მოთავსებულია ელემენტის ცენტრში,
+bottpm - ქვემოთ, top - ზედა ნაწილში, left - მარცხენა ნაწილში, right - მარჯვენა ნაწილში
+
+-->
+
+
+
+<!-- 1) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cover">
+        <h1>Background-size: cover</h1>
+    </div>
+
+    <div class="contain">
+        <h1>Background-size: contain</h1>
+    </div>
+</body>
+</html>

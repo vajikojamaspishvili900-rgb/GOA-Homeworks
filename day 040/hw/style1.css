@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out, background-color 1s ease-in-out;
+
+}
+
+.div1:hover{
+    transform: translateX(10px) translateY(10px);
+    background-color: rgb(187, 0, 255);
+    transition: transform 0.2s ease-in-out, background-color 1s ease-in-out;
+}
+
+.div1:active{
+    transform: translateX(15px) translateY(15px);
+    background-color: rgb(0, 183, 255);
+    transition: transform 0.2s ease-in-out, background-color 1s ease-in-out;
+}
