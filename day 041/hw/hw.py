@@ -16,7 +16,7 @@ def disemvowel(string_):
 
 # 1)
 def odd_ball(arr):
-    return True if arr.index("odd") in arr else False
+    return arr.index("odd") in arr
 
 # 2)
 def dont_give_me_five(start,end):
@@ -24,8 +24,8 @@ def dont_give_me_five(start,end):
 
 # 3)
 def solution(text, ending):
-    return True if text.endswith(ending) else False
+    return text.endswith(ending)
 
 # 4)
 def xo(s):
-    return True if s.lower().count("o") == s.lower().count("x") else False 
+    return s.lower().count("o") == s.lower().count("x")
