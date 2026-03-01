@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: repeat(2,100px);
+    gap: 10px;
+}
+
+.logo_cube{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+.loading{
+    width: 50px;
+    height: 50px;
+    border: 10px solid white;
+    animation: animate 2s ease-in-out infinite;
+    /* animation: spin 5s ease-in-out infinite; */
+    border-top: 10px solid rgba(100, 100, 100, 0);
+    border-radius: 50%;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.all{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}

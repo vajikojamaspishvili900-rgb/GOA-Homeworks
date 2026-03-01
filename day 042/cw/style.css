@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+@keyframes around{
+    25%{
+        transform: translate(1000px, 0px);
+        background-color: yellow;
+    }
+    50%{
+        transform: translate(1000px,500px);
+        background-color: blueviolet;
+    }
+    75%{
+        transform: translate(0px, 500px);
+        background-color: cyan;
+    }
+    100%{
+        transform: translate(0px, 0px);
+        background-color: blue;
+    }
+}
+
+.div1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    animation: around 4s infinite;
+}
