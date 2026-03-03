@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.load{
+    width: 100px;
+    height: 100px;
+    border: 20px dotted rgb(132, 132, 132);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    animation: zoom 5s ease-in-out infinite;
+}
+
+
+@keyframes zoom{
+    0%{
+        transform: rotate(0deg);
+        border: 20px dotted rgba(62, 62, 62, 0.5);
+    }
+    100%{
+        transform: rotate(360deg);
+        border: 20px dotted rgb(62, 62, 62);
+    }
+
+}
+
