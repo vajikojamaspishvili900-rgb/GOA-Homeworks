@@ -1,0 +1,27 @@
+<!-- 0) შექმენით div, რომელსაც მისცემთ 200px სიმაღლეს და სიგანეს, ასევე ფერს წითელს, 
+შემდეგ შექმენით 2 ღილაკი პირველ ღილაკზე დაჭერისას ფერი გახდეს ყვითელი, ხოლო მეორე ღილაკის დაჭერისას გახდეს წითელი
+1) გააკეთეთ პირველ დავალებაში მოცემული დავალება ფოტოებით -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- 0) -->
+    <div class="div1" id="divi"></div>
+    <button onclick="document.getElementById('divi').style.backgroundColor='yellow'">Change Color</button>
+    <button onclick="document.getElementById('divi').style.backgroundColor='red'">Change Back</button>
+    <br><br>
+
+    <!-- 1) -->
+    <img src="image1.png" id="pic"> <br>
+    <button onclick="pic.src='image2.png'">Change Image</button>
+    <button onclick="pic.src='image1.png'">Change Image Back</button>
+</body>
+</html>
+
+

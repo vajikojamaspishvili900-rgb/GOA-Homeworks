@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* 0) */
+.div1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+/* 1) */
+img{
+    width: 300px;
+    height: 300px;
+}
+
+
