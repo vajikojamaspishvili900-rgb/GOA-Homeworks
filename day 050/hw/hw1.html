@@ -1,0 +1,68 @@
+<!-- 1) შექმენი <button>, რომლის დაჭერაზეც პარაგრაფის ფერი (color) შეიცვლება JavaScript-ის გამოყენებით
+
+2) შექმენი ღილაკი, რომლის დაჭერაზე <div>-ს background-color შეეცვლება
+
+3) დაამატე ტექსტი <p>, რომლის დაჭერაზეც მისი font-size გაიზრდება JavaScript-ით
+
+4) შექმენი სურათი <img>, რომლის დაჭერაზეც მისი width შეიცვლება JavaScript-ის საშუალებით
+
+5) შექმენი <div>, რომლის დაჭერაზეც დაემატება ან მოეხსნება border JavaScript-ის გამოყენებით -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1) -->
+    <div class="box">
+        <p id="par1">Paragraph</p>
+        <div class="buttons">
+            <button id="colorchanger1" onclick="par1.style.color = 'blue'">Change Color</button>
+            <button id="colorchanger1" onclick="par1.style.color = ''">Change back</button>
+        </div>
+    </div>
+
+    <!-- 2) -->
+    <div class="box">
+        <div id="div1" class="divs"></div>
+        <div class="buttons">
+            <button id="colorchanger2" onclick="div1.style.backgroundColor = 'blue'">Change Color</button>
+            <button id="colorchanger2" onclick="div1.style.backgroundColor = 'rgba(0, 0, 0, 0.2)'">Change back</button>
+        </div>
+    </div>
+
+    <!-- 3) -->
+    <div class="box">
+        <p id="par2">Hello, World!</p>
+        <div class="buttons">
+            <button id="sizechanger" onclick="par2.style.fontSize = '25px'">Change Size</button>
+            <button id="sizechanger" onclick="par2.style.fontSize = '16px'">Change back</button>
+        </div>
+    </div>
+
+    <!-- 4) -->
+    <div class="box">
+        <img id="img1" src="image.jpg" alt="Sample Image" width="300px">
+        <div class="buttons">
+            <button id="sizechanger2" onclick="img1.style.width = '350px'">Increase size</button>
+            <button id="sizechanger2" onclick="img1.style.width = '250px'">Decrease size</button>
+            <button id="sizechanger2" onclick="img1.style.width = '300px'">Reset</button>
+        </div>
+    </div>
+
+    <!-- 5) -->
+    <div class="box">
+        <div id="div2" class="divs"></div>
+        <div class="buttons">
+            <button id="borderchanger" onclick="div2.style.border = '3px solid blue'">Add Border</button>
+            <button id="borderchanger" onclick="div2.style.border = 'none'">Remove Border</button>
+        </div>
+    </div>
+</body>
+</html>
