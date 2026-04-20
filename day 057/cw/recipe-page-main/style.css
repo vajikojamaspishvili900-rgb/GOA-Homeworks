@@ -1,0 +1,125 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #F3E5D8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  margin: 20px;
+}
+
+.recipe-card {
+  background-color: #FFFFFF;
+  max-width: 736px;
+  border-radius: 24px;
+  padding: 50px;
+
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  color: #312E2C;
+  margin-bottom: 24px;
+  font-size: 36px;
+}
+
+p {
+  color: #5F564D;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.prep-time {
+  background-color: #FFF7FB;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.prep-time h3 {
+  color: #7A284E;
+  margin-bottom: 15px;
+}
+
+.prep-time ul {
+  margin-left: 20px;
+}
+
+.prep-time li {
+  margin-bottom: 10px;
+  color: #5F564D;
+}
+
+.section {
+  padding: 32px 0;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  color: #854632;
+  margin-bottom: 20px;
+}
+
+.styled-list {
+  margin-left: 20px;
+}
+
+.styled-list li {
+  margin-bottom: 12px;
+  color: #5F564D;
+  padding-left: 10px;
+}
+
+li::marker {
+  color: #854632;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #E3DDD7;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #E3DDD7;
+  color: #5F564D;
+}
+
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+.stat {
+  color: #854632;
+  font-weight: bold;
+}
+
+/* მობილური ეკრანებისთვის */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  .recipe-card {
+    border-radius: 0;
+    padding: 0 0 30px 0;
+  }
+  .hero-image {
+    border-radius: 0;
+  }
+  .content {
+    padding: 0 25px;
+  }
+}
