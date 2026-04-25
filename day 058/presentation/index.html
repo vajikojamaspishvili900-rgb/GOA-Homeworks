@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Memory & Scope | Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="h1">JavaScript</div>
+        <div>
+            <a href="#stack">STACK</a>
+            <a href="#heap">HEAP</a>
+            <a href="#scope">SCOPE</a>
+        </div>
+    </nav>
+
+    <section id="section">
+        <h1>JavaScript მეხსიერების მართვა</h1>
+        <p>როგორ ინახება და მუშავდება თქვენი JavaScript კოდი კომპიუტერის
+            RAM-ში?</p>
+        <img src="memory.png" alt="memory" class="photo">
+    </section>
+
+    <section id="stack">
+        <h2>1. The Stack (სტეკი)</h2>
+        <p>სტეკი არის მეხსიერების სეგმენტი, სადაც JS ინახავს პრიმიტიულ
+            მონაცემებს და ფუნქციების გამოძახების რიგს.</p>
+        <div class="info-box">
+            <strong>მთავარი თვისებები:</strong>
+            <ul>
+                <li>ინახავს: Number, String, Boolean, Null, Undefined.</li>
+                <li>მუშაობს პრინციპით: Last In, First Out (ბოლო შემოვიდა -
+                    პირველი გავიდა).</li>
+                <li>არის ძალიან სწრაფი, რადგან ზომა წინასწარ ცნობილია.</li>
+            </ul>
+        </div>
+        <img src="stack.png" alt="stack" class="photo">
+    </section>
+
+    <section id="heap">
+        <h2>2. The Heap (ჰიპი)</h2>
+        <p>ჰიპი არის მეხსიერების დიდი და დინამიური ნაწილი კომპიუტერის
+            მეხსიერებაში, სადაც ინახება რთული ტიპის მონაცემები (ობიექტები,
+            მასივები).</p>
+        <div class="info-box">
+            <strong>რატომ არის საჭირო:</strong>
+            <ul>
+                <li>ობიექტების და მასივების ზომა შეიძლება შეიცვალოს
+                    მუშაობისას.</li>
+                <li>სტეკში ინახება მხოლოდ "Reference" (მისამართი), რომელიც
+                    მიუთითებს ობიექტზე ჰიპში.</li>
+                <li>მართავს Garbage Collector (ავტომატური მეხსიერების
+                    გამწმენდი).</li>
+            </ul>
+        </div>
+        <img src="heap.png" alt="heap" class="photo">
+    </section>
+
+    <section id="scope">
+        <h2>3. Scope (ხედვის არე)</h2>
+        <p>სკოუპი განსაზღვრავს ცვლადების ხილვადობას კოდის სხვადასხვა
+            ნაწილში.</p>
+        <div class="info-box">
+            <strong>დონეები:</strong>
+            <ul>
+                <li>Global: ხელმისაწვდომია ყველგან.</li>
+                <li>Function: ხელმისაწვდომია მხოლოდ ფუნქციის შიგნით.</li>
+                <li>Block: let და const-ით შექმნილი ცვლადები ჩანს მხოლოდ { }
+                    ბლოკში.</li>
+            </ul>
+        </div>
+        <img src="scope.png" alt="scope" class="photo">
+    </section>
+
+    <footer>
+        &copy; 2026 JavaScript Presentation. All rights reserved.
+    </footer>
+
+</body>
+</html>
