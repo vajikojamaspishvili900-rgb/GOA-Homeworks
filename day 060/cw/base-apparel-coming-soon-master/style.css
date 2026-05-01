@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* LAYOUT */
+.body{
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 400px;
+}
+
+.right{
+    width: 50%;
+    height: 100vh;
+    background-image: url(./images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* LOGO */
+.logo{
+    margin-bottom: 40px;
+}
+
+/* TEXT */
+.headings{
+    font-size: 50px;
+}
+
+.pinkhead{
+    font-weight: 100;
+    color: hsl(0, 36%, 70%);
+    margin: 0;
+}
+
+.blackhead{
+    margin: 0;
+    color: hsl(0, 6%, 24%);
+}
+
+.p_tags{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+}
+
+/* INPUT */
+.inputs{
+    position: relative;
+    display: flex;
+    width: 90%;
+}
+
+.inputs input{
+    border: 1px solid hsl(0, 36%, 70%);
+    padding: 12px;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+}
+
+.inputs button{
+    position: absolute;
+    right: 0;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(0, 36%, 70%);
+    height: 100%;
+    width: 70px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .body{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        padding: 20px;
+        order: 2;
+        align-items: center;
+    }
+
+    .right{
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        order: 1;
+        background-image: url(./images/hero-mobile.jpg);
+    }
+
+    .cont{
+        align-items: center;
+        text-align: center;
+    }
+
+    .headings{
+        font-size: 35px;
+    }
+
+    .logo{
+        align-self: flex-start;
+    }
+}
