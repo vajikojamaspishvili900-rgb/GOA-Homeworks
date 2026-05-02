@@ -43,6 +43,10 @@ body {
 /* TEXT */
 .headings{
     font-size: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .pinkhead{
@@ -54,6 +58,8 @@ body {
 .blackhead{
     margin: 0;
     color: hsl(0, 6%, 24%);
+    width: 300px;
+    text-align: left;
 }
 
 .p_tags{
@@ -61,6 +67,7 @@ body {
     font-weight: 300;
     line-height: 30px;
     margin: 0;
+    text-align: center;
 }
 
 /* INPUT */
@@ -103,7 +110,7 @@ body {
     }
 
     .right{
-        background-size: contain;
+        background-size: cover;
         width: 100%;
         height: 100%;
         order: 1;
@@ -112,7 +119,11 @@ body {
 
     .cont{
         align-items: center;
-        text-align: center;
+    }
+    
+    .blackhead{
+        width: 200px;
+        font-weight: bold;
     }
 
     .headings{
