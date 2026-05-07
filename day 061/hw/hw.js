@@ -95,5 +95,3 @@ const fullSentence = sentenceArray.reduce((accumulator, currentWord) => {
     return accumulator + ' ' + currentWord;
 });
 console.log(fullSentence);
-
-
