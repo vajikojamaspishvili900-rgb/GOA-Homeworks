@@ -52,13 +52,13 @@
 
 
 
-// 1. .forEach - ინდექსის და მნიშვნელობის გამოტანა
+// 1. .forEach
 const fruits = ['ვაშლი', 'მსხალი', 'ატამი'];
 fruits.forEach((fruit, index) => {
     console.log(`${index}: ${fruit}`);
 });
 
-// 2. .forEach - ლუწობის შემოწმება
+// 2. .forEach
 const numbers = [1, 2, 3, 4, 5, 6];
 numbers.forEach(num => {
     if (num % 2 === 0) {
@@ -68,31 +68,32 @@ numbers.forEach(num => {
     }
 });
 
-// 3. .map - ფასდაკლება 10%
+// 3. .map
 const prices = [100, 250, 50, 80];
 const discountedPrices = prices.map(price => price * 0.9);
+console.log("ფასები ფასდაკლების გარეშე:", prices)
 console.log("ფასდაკლებული ფასები:", discountedPrices);
 
-// 4. .some - სიგრძის შემოწმება (> 10 სიმბოლო)
+// 4. .some
 const words = ['სახლი', 'გზა', 'ავტომობილი', 'ხე'];
-const isLongWordExists = words.some(word => word.length > 10);
-console.log("არის თუ არა 10 სიმბოლოზე მეტი სიგრძის სიტყვა?", isLongWordExists);
+const isLongWord = words.some(word => word.length > 10);
+console.log("არის თუ არა 10 სიმბოლოზე მეტი სიგრძის სიტყვა? =>", isLongWord);
 
-// 5. .find - პირველი რიცხვი, რომელიც მეტია 10-ზე
+// 5. .find
 const mixedNumbers = [5, 12, 8, 130, 44];
 const firstGreaterTen = mixedNumbers.find(num => num > 10);
-console.log("პირველი რიცხვი > 10-ზე:", firstGreaterTen);
+console.log("პირველი რიცხვი რომელიც მეტია 10-ზე:", firstGreaterTen);
 
-// 6. .findIndex - 'ფორთოხლის' ინდექსის პოვნა
+// 6. .findIndex
 const fruitBasket = ['ვაშლი', 'ბანანი', 'ფორთოხალი', 'ატამი'];
 const orangeIndex = fruitBasket.findIndex(fruit => fruit === 'ფორთოხალი');
-console.log("'ფორთოხლის' ინდექსია:", orangeIndex);
+console.log("ფორთოხლის ინდექსი:", orangeIndex);
 
-// 7. .reduce - სიტყვების შეერთება ერთ სტრინგად
+// 7. .reduce
 const sentenceArray = ['მე', 'მიყვარს', 'JavaScript'];
 const fullSentence = sentenceArray.reduce((accumulator, currentWord) => {
     return accumulator + ' ' + currentWord;
 });
-console.log("შედგენილი წინადადება:", fullSentence);
+console.log(fullSentence);
 
 
