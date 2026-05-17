@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+* {
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth"100;
+    cursor: default;
+}
+
+*p{
+    font-size: 18px;
+}
+
+.h1{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.txts{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-flow: column wrap;
+    gap: 15px;
+}
+
+.p{
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+    line-height: 25px;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pic {
+    background-image: url(./images/image-equilibrium.jpg);
+    width: 280px;
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 5px;
+    gap: 30px;
+}
+
+.creation img{
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.eth-p{
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+
+.below-middle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+.days-p{
+    color: hsl(215, 51%, 70%);
+}
+
+.eth, .days{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-flow: row wrap;
+}
+
+.creation{
+    margin-left: -30px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+hr{
+    margin: 20px 0px 10px 0px;
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 100%;
+}
+
+.below{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.creation p{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.cre{
+    color: hsl(215, 51%, 70%);
+}
+
+.jules{
+    color: white;
+}
+
+/* active version styles */
+
+.jules, .h1{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.jules:hover, .h1:hover{
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+
+.pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.view{
+    display: none;
+    cursor: pointer;
+    z-index: 67;
+}
+
+.pic:hover .view{
+    display: flex;
+}
+
+.pic:hover{
+    /* filter: blur(1px); */
+    background-color: hsla(178, 100%, 50%, 0.277);
+}
+
+.pic::before{
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    content: "";
+    inset: 0;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.pic:hover::before{
+    background: hsla(178, 100%, 50%, 0.5);
+}
+
+
+
+
+
