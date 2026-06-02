@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        #box {
+            transition: background-color 0.2s ease;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 40px;
+            background: linear-gradient(135deg, #001b42, #e2c3c3);
+            height: 100vh;
+        }
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 0, 0);
+        }
+        .counter-div, .color-changer, #userForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            padding: 10px;
+            border: 1px solid #cccccc50;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            background-color: #004080;
+        }
+        div{
+            border-radius: 20px;
+        }
+        input {
+            padding: 5px;
+            border: 1px solid #cccccc50;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        input:focus {
+            outline: none;
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+        }
+</style>
+</head>
+<body>
+    <form id="userForm">
+        <input type="text" id="name" placeholder="სახელი"><br>
+        <input type="text" id="surname" placeholder="გვარი"><br>
+        <input type="number" id="age" placeholder="ასაკი"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="counter-div">
+        <p id="counter">0</p>
+        <button id="increment">+</button>
+        <button id="decrement">-</button>
+    </div>
+    <div class="color-changer">
+        <div id="box"></div>
+        <button id="change1">მწვანე</button>
+        <button id="change2">წითელი</button>
+        <button id="change3">ლურჯი</button>
+        <br>
+        <button id="def">default</button>
+    </div>
+</body>
+</html>
