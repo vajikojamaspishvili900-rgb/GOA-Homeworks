@@ -5,8 +5,10 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault()
     const email = form.email.value
     const password = form.pass.value
-    user.email = email
-    user.password = password
+    const user = {
+        name: email,
+        password: password
+    };
     users.push(user)
 })
 console.log(users)
