@@ -45,6 +45,7 @@ form.addEventListener("submit", function(e) {
     };
     users.push(user);
     console.log(users);
+    form.reset();
 });
 
 
