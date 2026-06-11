@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script1.js" defer></script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        form{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-flow:row wrap;
+        }
+
+        input{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        button{
+            padding: 10px;
+            border: none;
+            background-color: lightgreen;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        li{
+            cursor: pointer;
+        }
+        li:hover{
+            text-decoration: line-through;
+            text-decoration-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- გააკეთეთ to-do list საიტი, როგორც გაკვეთილზე ვმუშაობდით, საიტზე უნდა იყოს form სადაც იქნება ინფუთი და task ის დამატების ღილაკი,
+
+თქვენ უნდა დაამატოთ ახალი task , tasks მასივში და დაარენდეროთ ამასთან ერთად, როდესაც რომელიმე task ს დააჭერთ უნდა წაიღალოს. -->
+    <form action="">
+        <input type="text" placeholder="Enter Task" id="task">
+        <button type="submit">Add Task</button>
+    </form>
+    <ol id="task-list">
+
+    </ol>
+</body>
+</html>
