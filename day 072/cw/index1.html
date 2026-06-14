@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script1.js" defer></script>
+    <style>
+        img{
+            width: 300px;
+            border-radius: 20px;
+        }
+        .product,#cart{
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            gap: 50px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-flow: column wrap;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgba(0, 128, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/13-laptop-platinum-right-render-fy25:VP4-1260x795?fmt=png-alpha" alt="Laptop">
+        <h3>Laptop</h3>
+        <p class="price">$1000</p>
+        <p class="description">Gaming Laptop</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://imgstore.alta.ge/images/4ac253bf-9ad2-49a9-8c3d-d44b08a4d5bd_Thumb.png" alt="Phone">
+        <h3>Phone</h3>
+        <p class="price">$800</p>
+        <p class="description">Smart Phone</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://s3.zoommer.ge/site/cca95bb0-617a-4bb9-83ab-2fada7f7435b_Thumb.jpeg" alt="Headphones">
+        <h3>Headphones</h3>
+        <p class="price">$150</p>
+        <p class="description">Wireless Headphones</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://media.wired.com/photos/68a91b1c8930cbd96bd0da81/191:100/w_1280,c_limit/The%20Best%20Keyboards%20for%20Work%20and%20Play.png" alt="Keyboard">
+        <h3>Keyboard</h3>
+        <p class="price">$70</p>
+        <p class="description">Mechanical Keyboard</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://assets.kmart.com.au/transform/5410c5ca-5450-4a27-aeac-86afc4da5b83/43567669-1?io=transform:fit,width:3840,height:4800&quality=90" alt="Mouse">
+        <h3>Mouse</h3>
+        <p class="price">$50</p>
+        <p class="description">Gaming Mouse</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <h1>Cart</h1>
+    <div id="cart"></div>
+</body>
+</html>
