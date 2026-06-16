@@ -1,0 +1,30 @@
+const form = document.querySelector("form");
+const ol = document.querySelector("#task-list");
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const task = document.querySelector("#task").value;
+    tasks.push(task);
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+
+    renderTask();
+    document.querySelector("#task").value = "";
+});
+
+const renderTask = () => {
+    ol.innerHTML = "";
+    tasks.forEach((task, index) => {
+        ol.innerHTML += `
+            <li onclick="deleteTask(${index})">${task}</li>
+        `;
+    });
+};
+
+const deleteTask = (index) => {
+    tasks = tasks.filter((_, i) => i !== index);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+    renderTask();
+};
+renderTask();
