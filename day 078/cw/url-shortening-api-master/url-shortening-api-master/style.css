@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+img
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    margin-top: 30px;
+    display: flex;
+    gap: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgn {
+    display: flex;
+    gap: 35px;
+}
+
+#links {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+}
+
+#buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+#login {
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-weight: 600;
+}
+
+#signup {
+    border: none;
+    background-color:hsl(180, 66%, 49%);
+    color: white;
+    border-radius: 20px;
+    width: 85px;
+    height: 30px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    
+}
+
+#main h1 {
+    font-size: 55px;
+}
+
+#right {
+    margin-right: -200px;
+}
+
+
+
+#hero {
+    width: 85%;
+}
+
+#main p {
+    color: gray;
+    font-weight: 500;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#main button {
+    border: none;
+    background-color:hsl(180, 66%, 49%);
+    color: white;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    font-weight: 600;
+}
+
+#form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    background-image: url("./images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 27%, 26%);
+    width: 82%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+input {
+    width: 800px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder{
+    padding-left: 20px;
+}
+
+#shorten {
+    height: 50px;
+    width: 120px;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+#adv {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    height: 500px;
+}
+
+
+
+
+#advs {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#advs p {
+    color: gray;
+    font-weight: 400;
+}
+
+.images {
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.images img {
+    width: 50%;
+
+}
+
+#divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#brand {
+    background-color: white;
+    width: 25%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    height: 220px;
+}
+
+#detail {
+    background-color: white;
+    width: 25%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    height: 220px;
+}
+
+#Fully {
+    background-color: white;
+    width: 25%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    height: 220px;
+    
+}
+
+.divstext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+
+
+
+#brand,
+#detail,
+#Fully {
+    position: relative;
+    padding: 0 30px 30px;
+}
+
+.images {
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+.divstext {
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.divstext p {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#detail {
+    margin-top: 40px;
+}
+
+#Fully {
+    margin-top: 80px;
+}
+
+#divs {
+    position: relative;
+}
+
+#divs {
+    background: linear-gradient(
+        to right,
+        transparent 8%,
+        hsl(180, 66%, 49%) 8%,
+        hsl(180, 66%, 49%) 92%,
+        transparent 92%
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 8px;
+    background-position: center;
+}
+
+#boost {
+    background-image: url("./images/bg-boost-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 27%, 26%);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#boost div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+#boost h1 {
+    color: white;
+    font-size: 36px;
+}
+
+#boost button {
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: hsl(260, 8%, 14%);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 70px 0;
+}
+
+footer h1,
+footer h4 {
+    color: white;
+}
+
+#navs {
+    display: flex;
+    gap: 80px;
+}
+
+#navs nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer nav a {
+    color: hsl(0, 0%, 75%);
+    font-size: 14px;
+}
+
+#logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#logos img {
+    cursor: pointer;
+}
+
+a:hover {
+    color: black;
+}
+
+footer nav a:hover {
+    color: hsl(180, 66%, 49%);
+}
+
+#signup:hover,
+#getst:hover,
+#shorten:hover,
+#boost button:hover {
+    background-color: hsl(180, 66%, 65%);
+}
+
+
+
+@media (max-width: 1200px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #imgn,
+    #links,
+    #buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    #right {
+        margin-right: 0;
+    }
+
+    #hero {
+        width: 100%;
+    }
+
+    #main h1 {
+        font-size: 36px;
+    }
+
+    #left {
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #inp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    input,
+    #shorten {
+        width: 100%;
+    }
+
+    #adv {
+        height: auto;
+        padding: 80px 0;
+        
+    }
+
+    #divs {
+        flex-direction: column;
+        background: none;
+        
+    }
+
+    #brand,
+    #detail,
+    #Fully {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    #boost h1 {
+        font-size: 28px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        
+    }
+
+    #navs {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #logos {
+        justify-content: center;
+    }
+}
