@@ -1,0 +1,57 @@
+/* # Classwork 
+
+1) რესურსებში ჩაგდებული კოდი გასტილეთ ლამაზად */
+
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: linear-gradient(52deg, #0f23fa 0%, #0fe7fa 0%, #0f85fa 54%);
+}
+
+
+#heading{
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+}
+
+
+img{
+    width: 200px;
+    filter: drop-shadow(2px 2px 10px rgba(255, 255, 0, 1));
+}
+
+
+.product-card{
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px black;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.2);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-card p{
+    font-weight: normal;
+}
+.product-card *{
+    font-weight: bold;
+}
+
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 50px;
+    margin: 50px;
+}
+
+
+
