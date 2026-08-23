@@ -1,0 +1,103 @@
+<!-- https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">Shortly</div>
+        <nav class="nav-links">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#">Login</a>
+            <button class="btn btn-round">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>More than just shorter links</h1>
+            <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+            <button class="btn btn-lg">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="./images/illustration-working.svg"
+                alt="Working illustration" />
+        </div>
+    </section>
+
+    <!-- Shortener Section -->
+    <section class="shortener-container">
+        <form id="url-form" class="shortener-form">
+            <div class="input-group">
+                <input type="text" id="url-input" placeholder="Shorten a link here..." />
+                <span id="error-msg" class="error-msg">Please add a link</span>
+            </div>
+            <button type="submit" class="btn btn-square">Shorten It!</button>
+        </form>
+
+        <!-- Results List -->
+        <div id="results-list" class="results-list"></div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <h2>Advanced Statistics</h2>
+        <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Brand Recognition</h3>
+                <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help
+                    instil confidence in your content.</p>
+            </div>
+            <div class="card">
+                <h3>Detailed Records</h3>
+                <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content
+                    helps inform better decisions.</p>
+            </div>
+            <div class="card">
+                <h3>Fully Customizable</h3>
+                <p>Improve brand awareness and content discoverability through customizable links, supercharging
+                    audience engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-title">Shortly</div>
+        <div class="footer-links">
+            <div>
+                <h4>Features</h4>
+                <a href="#">Link Shortening</a>
+                <a href="#">Branded Links</a>
+                <a href="#">Analytics</a>
+            </div>
+            <div>
+                <h4>Resources</h4>
+                <a href="#">Blog</a>
+                <a href="#">Developers</a>
+                <a href="#">Support</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Our Team</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
