@@ -1,0 +1,105 @@
+<!-- 1) https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desserts Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <main class="products-section">
+                <h1>Desserts</h1>
+                <div class="products-grid" id="products-grid"></div>
+            </main>
+
+            <aside class="cart-section">
+                <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+
+                <div id="cart-empty" class="cart-empty">
+                    <p>Your added items will appear here</p>
+                </div>
+
+                <div id="cart-content" class="cart-content hidden">
+                    <div id="cart-items"></div>
+
+                    <div class="cart-total">
+                        <span>Order Total</span>
+                        <strong id="total-price">$0.00</strong>
+                    </div>
+
+                    <button id="confirm-btn" class="btn-confirm">Confirm
+                        Order</button>
+                </div>
+            </aside>
+        </div>
+
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Order Confirmed</h2>
+                <p>We hope you enjoy your food!</p>
+                <div id="modal-items" class="modal-items"></div>
+                <button id="new-order-btn" class="btn-confirm">Start New
+                    Order</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    
+    </body>
+</html>
+<!-- 
+
+  Desserts
+
+  Waffle with Berries
+  Waffle
+  6.50
+  Add to Cart
+
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart
+
+  Your Cart (Quantity)
+  Your added items will appear here 
+
+-->

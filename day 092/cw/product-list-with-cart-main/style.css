@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=League+Spartan:wght@100..900&family=Nabla&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth"100;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fcf8f6;
+    padding: 40px 10%;
+    color: #260f08;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.products-section {
+    flex: 2;
+}
+
+.products-section h1 {
+    margin-bottom: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #ad8a85;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: -20px auto 15px auto;
+    cursor: pointer;
+    font-weight: bold;
+    width: 80%;
+    position: relative;
+}
+
+.btn-add:hover {
+    color: #c73b0f;
+    border-color: #c73b0f;
+}
+
+.btn-quantity {
+    background: #c73b0f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: -20px auto 15px auto;
+    width: 80%;
+    position: relative;
+}
+
+.btn-quantity button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-info {
+    padding: 0 15px;
+}
+
+.product-category {
+    font-size: 0.85rem;
+    color: #87635a;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-price {
+    color: #c73b0f;
+    font-weight: bold;
+}
+
+.cart-section {
+    flex: 1;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.cart-section h2 {
+    color: #c73b0f;
+    margin-bottom: 20px;
+}
+
+.cart-empty {
+    text-align: center;
+    color: #87635a;
+    padding: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f4edeb;
+    padding: 15px 0;
+}
+
+.cart-item-info h4 {
+    margin-bottom: 5px;
+}
+
+.cart-item-details {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.count-highlight {
+    color: #c73b0f;
+    font-weight: bold;
+}
+
+.btn-remove {
+    background: transparent;
+    border: 1px solid #ad8a85;
+    color: #ad8a85;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.btn-remove:hover {
+    color: #260f08;
+    border-color: #260f08;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.btn-confirm {
+    width: 100%;
+    background: #c73b0f;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-confirm:hover {
+    background: #a02e0b;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+}
+
+.modal-items {
+    background: #fcf8f6;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
