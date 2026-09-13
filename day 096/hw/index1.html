@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- 1) https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM -->
+
+    <main class="clock-app">
+
+        <section class="quote-section">
+            <p class="quote">
+                "The science of operations, as derived from mathematics..."
+            </p>
+            <p class="quote-author">John Doe</p>
+        </section>
+
+        <section class="clock-section">
+            <p class="greeting">GOOD MORNING</p>
+            <div class="time">
+                <span id="time">11:37</span> <span class="period">AM</span>
+            </div>
+            <p class="location">IN TBILISI, GEORGIA</p>
+        </section>
+
+        <section class="details">
+            <div class="detail">
+                <p class="label">CURRENT TIMEZONE</p>
+                <p class="value" id="timezone">Europe/Tbilisi</p>
+            </div>
+            <div class="detail">
+                <p class="label">DAY OF THE YEAR</p>
+                <p class="value" id="day-of-year">256</p>
+            </div>
+            <div class="detail">
+                <p class="label">DAY OF THE WEEK</p>
+                <p class="value" id="day-of-week">7</p>
+            </div>
+            <div class="detail">
+                <p class="label">WEEK NUMBER</p>
+                <p class="value" id="week-number">37</p>
+            </div>
+        </section>
+        <!-- Expand button -->
+        <button class="more-button" id="more-button">MORE <span>↓</span></button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

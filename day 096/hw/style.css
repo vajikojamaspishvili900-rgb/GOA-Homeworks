@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1920&q=80") center / cover no-repeat;
+    transition: background 0.5s ease;
+}
+
+.clock-app {
+    min-height: 100vh;
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* QUOTE */
+
+.quote-section {
+    max-width: 600px;
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.quote-author {
+    font-weight: bold;
+}
+
+
+/* CLOCK */
+
+.clock-section {
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.greeting {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.time {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+#time {
+    font-size: clamp(80px, 15vw, 180px);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.period {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.location {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+/* DETAILS */
+
+.details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    padding: 50px 10%;
+
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    color: #222;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.details.active {
+    display: grid;
+}
+
+.label {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.value {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* BUTTON */
+
+.more-button {
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 12px 20px;
+
+    background: white;
+    color: #333;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.more-button:hover {
+    transform: scale(1.05);
+}
+
+.more-button span {
+    margin-left: 10px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .clock-app {
+        padding: 40px 25px;
+    }
+
+    .quote {
+        font-size: 15px;
+    }
+
+    #time {
+        font-size: 75px;
+    }
+
+    .period {
+        font-size: 18px;
+    }
+
+    .location {
+        font-size: 14px;
+    }
+
+    .details {
+        padding: 35px 25px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .value {
+        font-size: 24px;
+    }
+
+    .more-button {
+        right: 25px;
+        bottom: 30px;
+    }
+}
