@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Todo App</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <main class="container">
+
+            <!-- HEADER -->
+
+            <header class="header">
+
+                <h1>Todo</h1>
+
+                <button class="theme-btn" id="themeBtn">
+                    <img src="./images/icon-sun.svg" alt="sun-moon-icon">
+                </button>
+
+            </header>
+
+            <!-- ADD TODO -->
+
+            <div class="todo-input">
+
+                <input
+                    id="todoInput"
+                    type="text"
+                    placeholder="Create a new todo..."
+                    enterkeyhint="done">
+
+            </div>
+
+            <!-- TODO LIST -->
+
+            <div class="todo-list" id="todoList">
+            </div>
+
+            <!-- FOOTER -->
+
+            <div class="todo-footer">
+
+                <span id="itemsLeft">0 items left</span>
+
+                <div class="filters">
+
+                    <button id="allBtn">
+                        All
+                    </button>
+
+                    <button id="activeBtn">
+                        Active
+                    </button>
+
+                    <button id="completedBtn">
+                        Completed
+                    </button>
+
+                </div>
+
+                <button id="clearCompleted">
+                    Clear Completed
+                </button>
+
+            </div>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
+<!-- Todo
+
+(Add dynamic number) items left
+
+All
+Active 
+Completed
+
+Clear Completed
+
+Drag and drop to reorder list -->
+
+<!-- <div class="todo">
+    <div class="check"></div>
+    <p>Complete online Javascript course</p>
+    <button class="delete"><img src="./images/icon-cross.svg" alt="delete"></button>
+</div>
+
+<div class="todo">
+    <div class="check"></div>
+    <p>Jog around the park 3x</p>
+    <button class="delete"><img src="./images/icon-cross.svg" alt="delete"></button>
+</div>
+
+<div class="todo">
+    <div class="check"></div>
+    <p>10 minutes meditation</p>
+    <button class="delete"><img src="./images/icon-cross.svg" alt="delete"></button>
+</div>
+
+<div class="todo">
+    <div class="check"></div>
+    <p>Read for 1 hour</p>
+    <button class="delete"><img src="./images/icon-cross.svg" alt="delete"></button>
+</div>
+
+<div class="todo">
+    <div class="check"></div>
+    <p>Pick up groceriess</p>
+    <button class="delete"><img src="./images/icon-cross.svg" alt="delete"></button>
+</div>
+
+<div class="todo">
+    <div class="check"></div>
+    <p>Complete Todo App on Frontend Mentor</p>
+    <button class="delete"><img src="./images/icon-cross.   svg" alt="delete"></button>
+</div> -->
