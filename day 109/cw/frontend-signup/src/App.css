@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background: #070b10;
+  color: #e6eefc;
+}
+
+a {
+  color: #bef53a;
+  text-decoration: none;
+}
+
+/* ---------- განლაგება ---------- */
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+  background: #070b10;
+}
+
+.layout {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  gap: 48px;
+}
+
+/* ---------- მარცხენა ნაწილი ---------- */
+.logo {
+  height: 28px;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #dce8fa;
+}
+
+.title__slash {
+  color: #bef53a;
+  margin-right: 10px;
+}
+
+.subtitle {
+  margin-top: 24px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8a98a8;
+}
+
+.status {
+  display: none;
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid #26323a;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a98a8;
+}
+
+.status__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status__name {
+  margin: 8px 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: #fff;
+}
+
+.status__name--empty {
+  color: #5a6773;
+}
+
+.status__list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.status__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status__list i {
+  flex: 1;
+  border-bottom: 1px dotted #3a4852;
+}
+
+/* ---------- ბარათი ---------- */
+.card {
+  position: relative;
+  padding: 28px 24px;
+  background: #0c131a;
+  border: 1px solid #26323a;
+}
+
+/* ლაიმისფერი კუთხეები */
+.corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.corner--top {
+  top: -4px;
+  left: -4px;
+  border-top: 2px solid #bef53a;
+  border-left: 2px solid #bef53a;
+}
+
+.corner--bottom {
+  bottom: -4px;
+  right: -4px;
+  border-bottom: 2px solid #bef53a;
+  border-right: 2px solid #bef53a;
+}
+
+.card__top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #26323a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__note {
+  font-weight: 400;
+  color: #8a98a8;
+}
+
+/* ---------- ველები ---------- */
+.form {
+  display: grid;
+  gap: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8a98a8;
+}
+
+.field label span {
+  color: #bef53a;
+}
+
+.field input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 14px;
+  color: #fff;
+  background: #070b10;
+  border: 1px solid #26323a;
+  border-radius: 0;
+  outline: none;
+}
+
+.field input::placeholder {
+  color: #5a6773;
+}
+
+.field input:focus {
+  border-color: #bef53a;
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #6f7d8a;
+}
+
+/* შეცდომა */
+.error {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #ff5470;
+}
+
+.error:empty {
+  display: none;
+}
+
+.field--error input {
+  border-color: #ff5470;
+}
+
+/* ---------- პაროლი ---------- */
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  padding-right: 52px;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 0;
+  border-left: 1px solid #26323a;
+  cursor: pointer;
+}
+
+.toggle img {
+  width: 18px;
+}
+
+/* strength meter */
+.meter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.bar {
+  height: 3px;
+  background: #26323a;
+}
+
+.bar--weak {
+  background: #ff5470;
+}
+
+.bar--fair {
+  background: #fbbf24;
+}
+
+.bar--good {
+  background: #22d3ee;
+}
+
+.bar--strong {
+  background: #bef53a;
+}
+
+/* ---------- checkbox ---------- */
+.check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: #8a98a8;
+}
+
+.check input {
+  appearance: none;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: #070b10;
+  border: 1px solid #26323a;
+  cursor: pointer;
+}
+
+.check input:checked {
+  background: #bef53a;
+  border-color: #bef53a;
+}
+
+.terms .error {
+  margin-top: 8px;
+}
+
+/* ---------- ღილაკი ---------- */
+.btn {
+  width: 100%;
+  height: 48px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #070b10;
+  background: #bef53a;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #d0ff55;
+}
+
+.login {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #8a98a8;
+}
+
+/* ---------- success ---------- */
+.success {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.success__icon {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+}
+
+.success h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.success p {
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: #8a98a8;
+}
+
+.success b {
+  color: #bef53a;
+}
+
+/* ---------- დიდი ეკრანი ---------- */
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr 400px;
+    gap: 96px;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .status {
+    display: block;
+  }
+
+  .card {
+    padding: 32px;
+  }
+}
